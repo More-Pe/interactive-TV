@@ -1,27 +1,14 @@
-#main-container{
-    display: flex;
-    flex-direction: column;
+*{ margin: 0;
+   padding: 0;
 
-    align-items: center;
-    justify-content:center;
-
-    align-content: space-around;
-
-    background-color: aqua;
-    
-    max-width: 100vw;
-    min-height: 100vh;
-
-    flex-wrap: wrap;
+   font-family: Arial, Helvetica, sans-serif;
 }
-
-.row{
+#main-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
 
     width: 100%;
-    height: 50%;
     background-color: coral;
 
     flex-wrap: wrap;
@@ -31,12 +18,14 @@
 
 #container-tv{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     align-items: center;
     justify-content: center;
 
     background-color: blue;
+
+    min-height: 100vh;
 
     padding: 3em;
     margin: 1em;
@@ -46,6 +35,7 @@
 
 
 /* tv */
+
 #tv{
     display: flex;
     flex-direction: column;
@@ -92,10 +82,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     flex-wrap: wrap;
 
-    padding: 3em;
     margin: 1em;
 
 }
@@ -103,9 +91,328 @@
 /* remote */
 
 #remote{
-    height: 27em;
+    height: 30em;
     width: 9em;
     background-color: black;
     border-radius: 2em 2em 4em 4em;
     margin: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 0.5em solid black;
+    color: rgb(255, 255, 255);
 }
+
+#top-buttons-container {
+    height: 3.3em;
+    width: 8em;
+
+    margin-bottom: 1.3em;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.top-buttons {
+    height: 2em;
+    width: 2em;
+
+    border-radius: 40%;
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 0.3em;
+}
+
+#wheel-container {
+    height: 8em;
+    width: 9em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wheel {
+    height: 7em;
+    width: 7em;
+    background-color: gray;
+    border-radius: 50%;
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+
+    display: flex;
+    flex-direction: row;
+}
+
+#left-wheel {
+    height: 7em;
+    width: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#left-button {
+    height: 6em;
+    width: 2em;
+
+    border-radius: 15em 0 0 15em;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center-wheel {
+    height: 7em;
+    width: 3em;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#up-button {
+    height: 2em;
+    width: 2em;
+
+    border-radius: 50%;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ok-button {
+    height: 3em;
+    width: 3em;
+
+    border-radius: 50%;
+
+    color: white;
+
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#down-button {
+    height: 2em;
+    width: 2em;
+
+    border-radius: 50%;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#right-wheel {
+    height: 7em;
+    width: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-button {
+    height: 6em;
+    width: 2em;
+
+    border-radius: 0 15em 15em 0;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ch-vol-container {
+    height: 5em;
+    width: 9em;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+#chanel-button {
+    height: 4.2em;
+    width: 2em;
+
+    border-radius: 0.7em;
+    background-color: gray;
+    color: white;
+
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+#up-channel {
+    height: 1.6em;
+    width: 2em;
+
+    border-radius: 1em 1em 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chan-vol {
+    height: 1em;
+    width: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#down-channel {
+    height: 1.6em;
+    width: 2em;
+
+    border-radius: 0 0 1em 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vol-button {
+    height: 4.2em;
+    width: 2em;
+
+    border-radius: 0.7em;
+    background-color: gray;
+    color: white;
+
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#up-vol {
+    height: 1.6em;
+    width: 2em;
+
+    border-radius: 1em 1em 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#down-vol {
+    height: 1.6em;
+    width: 2em;
+
+    border-radius: 0 0  1em 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chanels-container {
+    height: 7em;
+    width: 9em;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-channels {
+    height: 3.5em;
+    width: 9em;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.channel {
+    height: 2em;
+    width: 2em;
+    border-radius: 40%;
+
+    color: white;
+
+    background-color: gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+}
+
+#bottom-buttons-container {
+    height: 3em;
+    width: 9em;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.bottom-buttons{
+    height: 1.7em;
+    width: 3.6em;
+
+    border-radius: 0.7em;
+
+    background-color: rgb(96, 96, 96);
+    color: white;
+
+
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-cyan{
+    background-color: rgb(121, 154, 245);
+}
+

@@ -4,30 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV y Mando</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<div class="-maincontainer">
-    <div class="row">
-        <div class="col" id="container-tv">
-            <div id="tv">
-                <div id="screen">
-                    pantalla
-                </div>
-                <div id="stand">
+<div class="row" id="main-container">
+    <div class="col" id="container-tv">
+        <div id="tv">
+            <div id="screen">
+                pantalla
+            </div>
+            <div id="stand">
                 soporte
-                </div>
-                <div id="base">
+            </div>
+            <div id="base">
                 base
+            </div>
+        </div>   
+        <div id="remote">
+            <div id="top-buttons-container">
+                <div class="top-buttons bg-red">⌽</div>
+                <div class="top-buttons bg-cyan">𝒾</div>
+            </div>
+            <div id="wheel-container">
+                <div id="wheel">
+                    <div id="left-wheel">
+                        <div id="left-button">◀</div>
+                    </div>
+                    <div id="center-wheel">
+                        <div id="up-button">▲</div>
+                        <div id="ok-button">OK</div>
+                        <div id="down-button">▼</div>
+                    </div>
+                    <div id="right-wheel">
+                        <div id="right-button">▶</div>
+                    </div>
+                    </div>
                 </div>
-            </div>   
-        </div>
-        <div class="col" id="remote-container">
-            <div id="remote">
-                acá irían los botones
+            <div id="ch-vol-container">
+                <div id="chanel-button">
+                    <div id="up-channel">+</div>
+                    <div id="chan-vol">
+                        <h6>CHAN</h6>
+                    </div>
+                    <div id="down-channel">-</div>
+                </div>
+                <div id="vol-button">
+                    <div id="vol-up">+</div>
+                    <div id="chan-vol">
+                        <h6>VOL</h6>
+                    </div>
+                    <div id="down-vol">-</div>
+                </div>
+            </div>
+            <div id="channels-container">
+                <div class="row-channels">
+                    <div class="channel">1</div>
+                    <div class="channel">2</div>
+                    <div class="channel">3</div>
+                </div>
+                <div class="row-channels">
+                    <div class="channel">4</div>
+                    <div class="channel">5</div>
+                    <div class="channel">6</div>
+                </div>
+            </div>
+            <div id="bottom-buttons-container">
+                <div class="bottom-buttons bg-cyan">
+                    <h6>Disney</h6>
+                </div>
+                <div class="bottom-buttons bg-red">
+                    <h6>Netflix</h6>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script src="./js/main.js">
 </body>    
 </html>
