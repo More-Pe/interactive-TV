@@ -9,7 +9,6 @@
     justify-content: center;
 
     width: 100%;
-    background-color: coral;
 
     flex-wrap: wrap;
 }
@@ -22,8 +21,6 @@
 
     align-items: center;
     justify-content: center;
-
-    background-color: blue;
 
     min-height: 100vh;
 
@@ -48,6 +45,7 @@
 
 #screen{
     display: flex;
+    position: relative;
 
     width: 64em;
     height: 36em;
@@ -174,6 +172,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 #center-wheel {
@@ -197,6 +197,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 #ok-button {
@@ -212,6 +214,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 #down-button {
@@ -224,6 +228,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 
@@ -246,6 +252,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 #ch-vol-container {
@@ -272,7 +280,6 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-
 }
 
 
@@ -285,6 +292,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 #chan-vol {
@@ -305,6 +314,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 #vol-button {
@@ -332,6 +343,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 #down-vol {
@@ -343,6 +356,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 #chanels-container {
@@ -379,6 +394,8 @@
     align-items: center;
 
     box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+
+    cursor: pointer;
 }
 
 #bottom-buttons-container {
@@ -410,9 +427,123 @@
 
 .bg-red {
     background-color: red;
+
+    cursor: pointer;
 }
 
 .bg-cyan{
     background-color: rgb(121, 154, 245);
+
+    cursor: pointer;
 }
 
+/* ------------------------------------- */
+
+
+.off {
+   img {
+    display:none;
+   }
+}
+
+.on{
+    #ch1, #ch2, #ch3, #ch4, #ch5, #ch6 {
+        display: none;
+    }
+    #static {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ch1 {
+    #static, #ch2, #ch3, #ch4, #ch5, #ch6 {
+        display: none;
+    }
+    #ch1 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ch2 {
+    #static, #ch1, #ch3, #ch4, #ch5, #ch6 {
+        display: none;
+    }
+    #ch2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ch3 {
+    #static, #ch1, #ch2, #ch4, #ch5, #ch6 {
+        display: none;
+    }
+
+    #ch3 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ch4 {
+    #static, #ch1, #ch2, #ch3, #ch5, #ch6 {
+        display: none;
+    }
+
+    #ch4 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ch5 {
+    #static, #ch1, #ch2, #ch3, #ch4, #ch6 {
+        display: none;
+    }
+
+    #ch5 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ch6 {
+    #static, #ch1, #ch2, #ch3, #ch4, #ch5 {
+        display: none;
+    }
+
+    #ch6 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.info-off {
+    display: none;
+}
+
+.info-on {  
+    display: flex;
+    justify-content: space-between;
+    color: rgb(249, 255, 69);
+    position: absolute;
+    width: 99%;
+    top: 0;
+    font-size: 1.5em;
+
+    text-shadow: -0.04em -0.04em 0 rgb(0, 0, 0), 0.04em -0.04em 0 rgb(0, 0, 0), -0.04em 0.04em 0 rgb(0, 0, 0), 0.04em 0.04em 0 rgb(0, 0, 0);
+}
+
+#date, #chanel-name {
+    padding-top: 0.2em;
+    padding-left: 1.5%;
+}
