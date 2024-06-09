@@ -2,9 +2,12 @@ let change = false;
 let infoChange = false;
 
 let tvScreen = document.getElementById("screen");
+
 let onOffButton = document.getElementById("on-off-button");
 let numberButton = document.getElementsByClassName("channel");
 let infoButton = document.getElementById("info-button");
+let upChannelButton = document.getElementById("up-channel");
+let downChannelButton = document.getElementById("down-channel");
 let tvInfo = document.getElementById("tv-info");
 let chanelName = document.getElementById("chanel-name");
 let dateTime = document.getElementById("date");
@@ -12,6 +15,7 @@ let dateTime = document.getElementById("date");
 let netflixButton = document.getElementById("netflix-button");
 let disneyButton = document.getElementById("disney-button");
 let arrayChanels = Array.from(numberButton);
+let currentChannel = 0;
 
 let now = new Date();
 let hour = String(now.getHours()).padStart(2, "0");
@@ -45,6 +49,22 @@ disneyButton.addEventListener("click", () => {
         chanelName.innerHTML = "Disney";
     }
 });
+
+upChannelButton.addEventListener('click', () => {
+    if (change) {
+      currentChannel = (currentChannel + 1) % arrayChanels.length;
+      tvScreen.classList.replace(tvScreen.classList[0], `ch${currentChannel + 1}`);
+      chanelName.innerHTML = `CH ${currentChannel + 1}`;
+    }
+  });
+  
+  downChannelButton.addEventListener('click', () => {
+    if (change) {
+      currentChannel = (currentChannel - 1 + arrayChanels.length) % arrayChanels.length;
+      tvScreen.classList.replace(tvScreen.classList[0], `ch${currentChannel + 1}`);
+      chanelName.innerHTML = `CH ${currentChannel + 1}`;
+    }
+  });
 
 dateTime.innerHTML = formattedDate + "<br>" + formattedTime;
 
