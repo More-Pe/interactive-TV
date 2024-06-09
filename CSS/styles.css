@@ -50,8 +50,8 @@
     width: 64em;
     height: 36em;
     background-color: rgb(28, 36, 41);
-    color: yellow;
     border: 1rem solid black;
+    box-shadow: inset -2px -2px 5px 5px rgb(34, 33, 33);
 
     flex-wrap: wrap;
 }
@@ -74,7 +74,6 @@
 
 #remote-container{
     display: flex;
-    background-color: red;
 
     display: flex;
     flex-direction: column;
@@ -121,7 +120,6 @@
     width: 2em;
 
     border-radius: 40%;
-    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
 
     display: flex;
     flex-direction: row;
@@ -145,7 +143,7 @@
     width: 7em;
     background-color: gray;
     border-radius: 50%;
-    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+    box-shadow: inset -1px -1px 5px 1px rgb(85, 83, 83);
 
     display: flex;
     flex-direction: row;
@@ -216,6 +214,8 @@
     align-items: center;
 
     cursor: pointer;
+
+    box-shadow: -1px -1px 5px 1px rgb(85, 83, 83);
 }
 
 #down-button {
@@ -274,7 +274,7 @@
     background-color: gray;
     color: white;
 
-    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+    box-shadow: inset -1px -1px 5px 1px rgb(85, 83, 83);
 
     display: flex;
     justify-content: space-between;
@@ -326,7 +326,7 @@
     background-color: gray;
     color: white;
 
-    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+    box-shadow: inset -1px -1px 5px 1px rgb(85, 83, 83);
 
     display: flex;
     justify-content: space-between;
@@ -393,7 +393,7 @@
     justify-content: center;
     align-items: center;
 
-    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.176);
+    box-shadow: inset -1px -1px 5px 1px rgb(85, 83, 83);
 
     cursor: pointer;
 }
@@ -427,12 +427,14 @@
 
 .bg-red {
     background-color: red;
+    box-shadow: inset -1px -1px 5px 1px rgb(115, 74, 74);
 
     cursor: pointer;
 }
 
 .bg-cyan{
     background-color: rgb(121, 154, 245);
+    box-shadow: inset -1px -1px 5px 1px rgb(57, 90, 119);
 
     cursor: pointer;
 }
@@ -447,7 +449,7 @@
 }
 
 .on{
-    #ch1, #ch2, #ch3, #ch4, #ch5, #ch6 {
+    #ch1, #ch2, #ch3, #ch4, #ch5, #ch6, #netflix, #disney {
         display: none;
     }
     #static {
@@ -458,7 +460,7 @@
 }
 
 .ch1 {
-    #static, #ch2, #ch3, #ch4, #ch5, #ch6 {
+    #static, #ch2, #ch3, #ch4, #ch5, #ch6, #netflix, #disney {
         display: none;
     }
     #ch1 {
@@ -469,7 +471,7 @@
 }
 
 .ch2 {
-    #static, #ch1, #ch3, #ch4, #ch5, #ch6 {
+    #static, #ch1, #ch3, #ch4, #ch5, #ch6, #netflix, #disney {
         display: none;
     }
     #ch2 {
@@ -480,7 +482,7 @@
 }
 
 .ch3 {
-    #static, #ch1, #ch2, #ch4, #ch5, #ch6 {
+    #static, #ch1, #ch2, #ch4, #ch5, #ch6, #netflix, #disney {
         display: none;
     }
 
@@ -492,7 +494,7 @@
 }
 
 .ch4 {
-    #static, #ch1, #ch2, #ch3, #ch5, #ch6 {
+    #static, #ch1, #ch2, #ch3, #ch5, #ch6, #netflix, #disney {
         display: none;
     }
 
@@ -504,7 +506,7 @@
 }
 
 .ch5 {
-    #static, #ch1, #ch2, #ch3, #ch4, #ch6 {
+    #static, #ch1, #ch2, #ch3, #ch4, #ch6, #netflix, #disney {
         display: none;
     }
 
@@ -516,11 +518,35 @@
 }
 
 .ch6 {
-    #static, #ch1, #ch2, #ch3, #ch4, #ch5 {
+    #static, #ch1, #ch2, #ch3, #ch4, #ch5, #netflix, #disney {
         display: none;
     }
 
     #ch6 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.netflix{
+    #static, #ch1, #ch2, #ch3, #ch4, #ch5, #ch6, #disney {
+        display: none;
+    }
+
+    #netflix{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.disney{
+    #static, #ch1, #ch2, #ch3, #ch4, #ch5, #ch6, #netflix {
+        display: none;
+    }
+
+    #disney{
         display: block;
         width: 100%;
         height: 100%;

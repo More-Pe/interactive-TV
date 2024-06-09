@@ -9,6 +9,8 @@ let tvInfo = document.getElementById("tv-info");
 let chanelName = document.getElementById("chanel-name");
 let dateTime = document.getElementById("date");
 
+let netflixButton = document.getElementById("netflix-button");
+let disneyButton = document.getElementById("disney-button");
 let arrayChanels = Array.from(numberButton);
 
 let now = new Date();
@@ -29,6 +31,20 @@ for (let i = 0; i < arrayChanels.length; i++) {
     }
   });
 }
+
+netflixButton.addEventListener("click", () => {
+    if (change) {
+        tvScreen.classList.replace(tvScreen.classList[0], "netflix");
+        chanelName.innerHTML = "Netflix";
+    }
+});
+
+disneyButton.addEventListener("click", () => {
+    if (change) {
+        tvScreen.classList.replace(tvScreen.classList[0], "disney");
+        chanelName.innerHTML = "Disney";
+    }
+});
 
 dateTime.innerHTML = formattedDate + "<br>" + formattedTime;
 
