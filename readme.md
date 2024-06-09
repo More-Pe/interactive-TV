@@ -39,7 +39,7 @@
 
 ## 🚀 Deployment
 
-https://more-pe.github.io/interactive-TV/
+https://more-pe.github.io/myInteractive-TV/
 
 ## 📞 Contacto
 - **Correo Electrónico:** more.peralta.mp@gmail.com
